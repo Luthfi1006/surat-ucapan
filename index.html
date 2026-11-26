@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>A Birthday Letter for Zahrah ✨ (Sweet 21)</title>
+
+  <!-- Open Graph Meta Tags (WhatsApp, Telegram, Social Media preview) -->
+  <meta name="description" content="Surat Ulang Tahun ke-21 untuk Sayangku (20 Oktober 2026). Buka kejutan spesial untukmu!">
+  <meta property="og:title" content="Happy 21st Birthday, Sayang! 🎂💌">
+  <meta property="og:description" content="Ada sebuah surat dari orang tercinta di malam yang indah ini khusus untukmu. Buka sekarang!">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#050818">
+
+  <!-- Google Fonts: Playfair Display, Caveat, Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Canvas Confetti CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Background Canvases: Twinkling Stars & Interactive Fireworks -->
+  <canvas id="stars-canvas"></canvas>
+  <canvas id="fireworks-canvas"></canvas>
+
+  <!-- Floating Audio Player Widget -->
+  <div id="music-floating-widget" class="music-floating-widget hidden">
+    <button id="music-toggle-btn" class="music-control-pill" title="Putar / Jeda Musik" aria-label="Putar / Jeda Musik">
+      <div class="vinyl-disc">
+        <span class="vinyl-center"></span>
+      </div>
+      <div class="music-text-group">
+        <span class="music-label" id="music-track-title">Monokrom - Tulus</span>
+        <span class="music-status" id="music-play-status">Musik Berputar</span>
+      </div>
+      <span class="music-toggle-icon" id="music-action-icon">⏸️</span>
+    </button>
+  </div>
+
+  <!-- HTML5 Audio Element for Direct Playback -->
+  <audio id="bg-audio-player" preload="auto" loop>
+    <source src="assets/audio/monokrom.mp3" type="audio/mpeg">
+    <source src="assets/audio/monokrom.mp3.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- ========================================================================= -->
+  <!-- TAHAP 1: PEMBUKA (OPENING STAGE: DIBUAT SAYANG TANPA NAMA DIA) -->
+  <!-- ========================================================================= -->
+  <section id="stage-opening" class="stage active">
+    <div class="opening-container">
+      <div class="opening-badge" id="opening-badge-tagline">✨ 20 OKTOBER 2026 • HARI SPESIAL UNTUK SAYANGKU ✨</div>
+      <div class="milestone-badge">👑 SWEET 21ST BIRTHDAY</div>
+      <h1 class="recipient-title gold-text" id="opening-recipient-name">Sayangku ❤️</h1>
+      <p class="opening-greeting" id="opening-hero-greeting">Happy 21st Birthday, Sayang! 🎂</p>
+      <p class="opening-date" id="opening-birth-date">20 Oktober 2026 • 21 Tahun</p>
+
+      <!-- Interactive Birthday Cake with Dual Number "21" Candles -->
+      <div class="cake-wrapper" id="opening-cake-trigger" title="Sentuh atau klik untuk meniup lilin 21!">
+        <div class="cake-box">
+          <!-- Top Tier with 21 Candles -->
+          <div class="cake-tier top">
+            <div class="frosting-garland">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            
+            <!-- Number Candles: 2 and 1 -->
+            <div class="candles-21-group">
+              <!-- Candle 2 -->
+              <div class="num-candle">
+                <div class="flame-element lit" id="candle-flame-2"></div>
+                <div class="smoke-trail" id="candle-smoke-2"></div>
+                <div class="candle-wick"></div>
+                <span class="num-digit">2</span>
+              </div>
+              <!-- Candle 1 -->
+              <div class="num-candle">
+                <div class="flame-element lit" id="candle-flame-1"></div>
+                <div class="smoke-trail" id="candle-smoke-1"></div>
+                <div class="candle-wick"></div>
+                <span class="num-digit">1</span>
+              </div>
+            </div>
+          </div>
+          <!-- Mid Tier -->
+          <div class="cake-tier mid">
+            <div class="frosting-garland">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <!-- Bottom Tier -->
+          <div class="cake-tier bottom">
+            <div class="frosting-garland">
+              <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <!-- Cake Base Plate -->
+          <div class="cake-base-plate"></div>
+        </div>
+        <p class="cake-tap-hint" id="cake-tap-hint-text">🕯️ Ketuk lilin 21 untuk meniup! 💨</p>
+      </div>
+
+      <!-- Action Button to Open the Envelope -->
+      <button id="open-letter-trigger-btn" class="btn btn-gold">
+        <span>Buka Suratmu 💌</span>
+      </button>
+      <p style="font-size: 0.8rem; color: #a4b2d1; margin-top: 18px;">
+        ✨ Nyalakan suaramu & sentuh langit malam untuk kembang api ✨
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- TAHAP 2: ANIMASI AMPLOP 3D (ENVELOPE OPENING MODAL) -->
+  <!-- ========================================================================= -->
+  <div id="envelope-modal-overlay" class="envelope-modal-overlay">
+    <div class="envelope-3d-box">
+      <div class="envelope-core" id="envelope-core-box">
+        <div class="envelope-back-wall"></div>
+        
+        <!-- Letter Paper Peeking Out -->
+        <div class="letter-paper-sheet">
+          <span class="letter-sheet-icon">🌸</span>
+          <p class="letter-sheet-title">Untuk Sayangku ❤️</p>
+          <p style="font-size: 0.8rem; color: #7a6e65;">Membuka surat dari orang tercinta...</p>
+        </div>
+
+        <div class="envelope-pocket-front"></div>
+        <div class="envelope-flap-top"></div>
+
+        <!-- Wax Seal -->
+        <div class="wax-seal-badge" id="wax-seal-button" title="Buka Segel">
+          <span class="wax-seal-monogram">Z</span>
+          <span class="wax-seal-label">BUKA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- TAHAP 3: MEMBACA SURAT & KONTEN UTAMA -->
+  <!-- ========================================================================= -->
+  <main id="stage-letter-main" class="stage hidden">
+
+    <!-- Header Banner -->
+    <header class="letter-header-banner">
+      <div class="letter-header-ribbon" id="letter-section-badge">📜 A LETTER FROM YOUR BELOVED • SWEET 21 📜</div>
+      <h2 class="letter-header-title gold-text" id="letter-heading-main">Selamat Ulang Tahun ke-21, Sayang! 🎂</h2>
+      <p class="letter-header-subtitle" id="letter-heading-sub">20 Oktober 2026 • Lembaran Baru yang Indah</p>
+    </header>
+
+    <!-- SECTION: PARCHMENT LETTER (SURAT DARI ORANG TERCINTA) -->
+    <section class="letter-parchment-container">
+      <span class="letter-ornament top-left">🌸</span>
+      <span class="letter-ornament top-right">🌸</span>
+      <span class="letter-ornament bottom-left">🌸</span>
+      <span class="letter-ornament bottom-right">🌸</span>
+
+      <!-- Title: "Untuk Zahrah Rahmadini" and below it "di Usia ke-21 Tahunmu ❤️" without comma -->
+      <h3 class="parchment-greeting-title">
+        <span class="parchment-title-line1" id="parchment-title-line1">Untuk Zahrah Rahmadini</span>
+        <span class="parchment-title-line2" id="parchment-title-line2">di Usia ke-21 Tahunmu ❤️</span>
+      </h3>
+      
+      <p class="parchment-sub-greeting" id="parchment-greeting">Happy 21st birthday sayangkuu. Selamat bertambah usia.</p>
+
+      <div class="parchment-body" id="parchment-body">
+        <!-- Paragraf surat dimuat otomatis dari data/settings.json -->
+      </div>
+
+      <div class="parchment-sign-off">
+        <p class="parchment-closing-text" id="parchment-closing">With all my love & prayers,</p>
+        <p class="parchment-signature-text" id="parchment-signature">Seseorang yang selalu menyayangimu ❤️</p>
+      </div>
+
+      <div class="parchment-seal-stamp">
+        <span>FOREVER & ALWAYS WITH YOU • 21 YEARS OF BEAUTY</span>
+      </div>
+    </section>
+
+    <!-- SECTION: PEMUTAR MUSIK KHUSUS MONOKROM - TULUS -->
+    <section class="content-glass-card music-feature-card" id="music-card-section">
+      <div class="card-badge">🎵 LAGU SPESIAL UNTUKMU 🎵</div>
+      <h3 class="card-title">Monokrom — Tulus</h3>
+      <p class="card-subtitle">
+        "Lembaran foto hitam putih, aku coba ingat lagi... Terima kasih untuk segala kebaikanmu, sayang."
+      </p>
+
+      <div class="music-player-display">
+        <div class="music-disc-large">
+          <div class="music-disc-label">🎶</div>
+        </div>
+        <div class="music-wave-bars">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div class="music-card-actions">
+        <button id="card-play-music-btn" class="btn btn-gold">
+          <span id="card-play-music-text">▶️ Putar Lagu 🎶</span>
+        </button>
+        <a href="https://www.youtube.com/watch?v=s5e_t7tB38E" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <span>🎧 Buka Klip Asli di YouTube ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION: DOA & HARAPAN DI USIA 21 -->
+    <section class="content-glass-card">
+      <div class="card-badge" id="wishes-badge-text">✨ Doa & Harapan Terbaik</div>
+      <h3 class="card-title" id="wishes-title-text">Harapan Indah untuk Usia 21 Tahunmu</h3>
+      <p class="card-subtitle" id="wishes-subtitle-text">
+        Doa-doa tulus yang selalu kupanjatkan untuk setiap detik dan langkah perjalananmu ke depan, sayang:
+      </p>
+
+      <div class="wishes-grid" id="wishes-21-container">
+        <!-- Diisi otomatis oleh script.js -->
+      </div>
+    </section>
+
+    <!-- SECTION: GALERI KENANGAN POLAROID (FR-04) -->
+    <section class="content-glass-card">
+      <div class="card-badge">📸 Kenangan Bersamamu</div>
+      <h3 class="card-title">Momen yang Selalu Disyukuri</h3>
+      <p class="card-subtitle">
+        Sentuh atau klik foto polaroid untuk membalik dan membaca pesan rahasia di baliknya! 🔄
+      </p>
+
+      <div class="polaroid-gallery-grid" id="polaroid-gallery-container">
+        <!-- Diisi otomatis oleh script.js -->
+      </div>
+    </section>
+
+    <!-- SECTION: BALASAN LANGSUNG KE WHATSAPP (0895333227653) -->
+    <section class="content-glass-card">
+      <div class="card-badge">💌 Kirim Balasan</div>
+      <h3 class="card-title">Punya Balasan untuk Surat Ini?</h3>
+      <p class="card-subtitle">
+        Ketik apa pun yang ingin kamu sampaikan hari ini, lalu kirimkan langsung ke WhatsApp:
+      </p>
+
+      <div style="max-width: 540px; margin: 0 auto;">
+        <textarea id="reply-text-box" class="reply-input-box" placeholder="Tuliskan perasaan atau balasanmu di sini, Zahrah sayang... ❤️"></textarea>
+        <button id="send-reply-wa-btn" class="btn btn-whatsapp-send">
+          <span>Kirim Balasan via WhatsApp 💬</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION: KONTROL PENUTUP (BACA LAGI & PUTAR ULANG KEJUTAN) -->
+    <section class="content-glass-card">
+      <h3 class="card-title">Ingin Mengulang Momen Spesial Ini?</h3>
+      <div class="controls-panel">
+        <button id="read-again-btn" class="btn btn-secondary">
+          <span>Baca Lagi Dari Atas 📜</span>
+        </button>
+        <button id="replay-surprise-btn" class="btn btn-gold">
+          <span>Putar Ulang Kejutan 🎆</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-site-footer">
+      <div class="footer-glowing-heart">💖</div>
+      <p id="footer-credit-text" style="font-weight: 600; color: #fff;">
+        Diciptakan dengan segenap cinta khusus untuk Sayangku
+      </p>
+      <p style="font-size: 0.85rem; margin-top: 5px;">
+        20 Oktober 2026 • Semoga usiamu yang ke-21 membawa ribuan kebahagiaan baru ✨
+      </p>
+      <a href="admin/" class="footer-admin-link">Panel Admin ⚙️</a>
+    </footer>
+
+  </main>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
+

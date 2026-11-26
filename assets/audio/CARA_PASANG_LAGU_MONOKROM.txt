@@ -1,0 +1,11 @@
+﻿CARA MEMASANG FILE MP3 LAGU MONOKROM - TULUS (OPSIONAL / OFFLINE)
+==================================================================
+
+Website ini sudah otomatis terhubung dengan video YouTube resmi:
+"TULUS - Monokrom (Official Music Video)"
+
+Jika kamu ingin lagunya bisa berputar 100% lancar walau laptop tidak terhubung ke internet:
+1. Siapkan file MP3 lagu Monokrom - Tulus di komputermu.
+2. Beri nama file tersebut: "monokrom.mp3"
+3. Masukkan file tersebut ke dalam folder ini (assets/audio/monokrom.mp3).
+4. Selesai! Website akan otomatis memutar file MP3 tersebut.

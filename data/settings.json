@@ -1,0 +1,107 @@
+﻿{
+    "recipient":  "Zahrah Rahmadini",
+    "birthDate":  "20 Oktober 2005",
+    "currentDate":  "20 Oktober 2026",
+    "age":  21,
+    "sender":  "Seseorang yang selalu menyayangimu ❤️",
+    "whatsappNumber":  "62895333227653",
+    "websiteTitle":  "A Birthday Letter for Zahrah ✨ (Sweet 21)",
+    "opening":  {
+                    "tagline":  "✨ 20 OKTOBER 2026 • HARI SPESIAL UNTUK SAYANGKU ✨",
+                    "heroGreeting":  "Happy 21st Birthday, Sayang! 🎂",
+                    "dateDisplay":  "20 Oktober 2026 • 21 Tahun",
+                    "openButtonText":  "Buka Suratmu 💌",
+                    "hint":  "✨ Nyalakan suaramu \u0026 sentuh langit malam untuk kembang api ✨",
+                    "recipientDisplay":  "Sayangku ❤️"
+                },
+    "cake":  {
+                 "enabled":  true,
+                 "title":  "Tiup Lilin 21 Tahunmu, Sayang! 🎂",
+                 "subtitle":  "Tutup matamu sejenak, bisikkan doa dan impian terindahmu di usia 21 ini, lalu sentuh lilinnya untuk meniup!",
+                 "successMessage":  "Doamu di usia ke-21 telah melesat menuju semesta. Semoga setiap langkahmu selalu dipeluk ketenangan, kesuksesan, dan kebahagiaan yang melimpah ya sayang. Amin paling serius! 💖"
+             },
+    "letter":  {
+                   "sectionBadge":  "A Letter From Your Beloved",
+                   "headingMain":  "Selamat Ulang Tahun ke-21, Sayang! 🎂",
+                   "headingSub":  "20 Oktober 2026 • Lembaran Baru yang Indah",
+                   "titleLine1":  "Untuk Zahrah Rahmadini",
+                   "titleLine2":  "di Usia ke-21 Tahunmu ❤️",
+                   "greeting":  "Happy 21st birthday sayangkuu. Selamat bertambah usia.",
+                   "paragraphs":  [
+                                      "Hari ini, 20 Oktober 2026, adalah hari yang teramat istimewa untukmu, sayang. Tepat 21 tahun yang lalu, seorang perempuan berhati hangat, tulus, dan teramat berharga hadir ke dunia, membawa begitu banyak warna dan kebahagiaan.",
+                                      "Memasuki usia 21 tahun adalah lembaran baru yang begitu indah dalam perjalanan hidupmu, sayangku. Di hari yang penuh berkah ini, aku berdoa dengan setulus hatiku, semoga kamu selalu dilimpahi kesehatan yang sempurna, ketenangan hati, pikiran yang damai, serta kemudahan dalam setiap urusan dan impian yang sedang kamu tuju.",
+                                      "Semoga semua rencana baik yang kamu perjuangkan perlahan berbuah manis menjadi nyata. Semoga setiap rasa lelahmu dibayar tuntas dengan rasa bahagia, setiap doa yang kamu simpan dalam diam menemukan jalannya di waktu yang paling indah, dan setiap air mata yang pernah jatuh berganti menjadi ribuan alasan untuk tersenyum lepas.",
+                                      "Terima kasih sudah bertahan, bertumbuh, dan selalu menjadi dirimu yang begitu kuat, hangat, dan luar biasa sampai hari ini. Bersamamu, hal-hal sederhana selalu terasa jauh lebih bermakna. Senyumanmu adalah hal favorit yang selalu ingin kujaga.",
+                                      "Di usia ke-21 ini, mungkin dunia akan menghadirkan lembaran dan tantangan baru. Tapi ingatlah selalu ya sayang, kamu tidak pernah sendirian. Kamu selalu punya aku di sini yang siap mendengarkan, menggenggam tanganmu, dan selalu mendukung setiap langkah hebatmu.",
+                                      "Selamat ulang tahun ke-21 ya, sayangku. Semoga semesta selalu punya cara terindah untuk membuatmu tersenyum bahagia hari ini dan seterusnya."
+                                  ],
+                   "closing":  "With all my love \u0026 prayers,",
+                   "signature":  "Seseorang yang selalu menyayangimu ❤️"
+               },
+    "wishesSection":  {
+                          "badge":  "✨ Doa \u0026 Harapan Terbaik",
+                          "title":  "Harapan Indah untuk Usia 21 Tahunmu",
+                          "subtitle":  "Doa-doa tulus yang selalu kupanjatkan untuk setiap detik dan langkah perjalananmu ke depan, sayang:",
+                          "items":  [
+                                        {
+                                            "icon":  "🌱",
+                                            "title":  "Ketenangan \u0026 Kebahagiaan Hati",
+                                            "desc":  "Semoga hatimu selalu lapang, dipenuhi rasa damai, dan dijauhkan dari segala cemas di lembaran barumu ya sayang."
+                                        },
+                                        {
+                                            "icon":  "🎓",
+                                            "title":  "Kelancaran Impian \u0026 Masa Depan",
+                                            "desc":  "Semoga setiap studi, karier, dan rencana besar yang sedang kamu rawat dibukakan pintu kemudahan dan kesuksesan gemilang."
+                                        },
+                                        {
+                                            "icon":  "🛡️",
+                                            "title":  "Kesehatan \u0026 Perlindungan Sempurna",
+                                            "desc":  "Semoga kamu selalu dijaga dari segala lelah, diberikan tubuh yang sehat bugar, dan energi kebaikan setiap hari."
+                                        },
+                                        {
+                                            "icon":  "💖",
+                                            "title":  "Selalu Dikelilingi Ketulusan",
+                                            "desc":  "Semoga di mana pun langkahmu berpijak, kamu selalu dipertemukan dengan orang-orang yang tulus menyayangimu apa adanya."
+                                        }
+                                    ]
+                      },
+    "memories":  [
+                     {
+                         "image":  "assets/images/memories/foto1.jpg",
+                         "caption":  "Senyuman Manismu 🌸",
+                         "date":  "Momen Berharga",
+                         "backNote":  "Senyumanmu selalu punya cara ajaib untuk mengubah hari yang melelahkan jadi terasa penuh ketenangan, sayang."
+                     },
+                     {
+                         "image":  "assets/images/memories/foto2.jpg",
+                         "caption":  "Obrolan Hangat ☕",
+                         "date":  "Waktu Bersama",
+                         "backNote":  "Mendengarkan tawamu dan bercerita tentang hal-hal kecil adalah salah satu momen yang paling kusyukuri."
+                     },
+                     {
+                         "image":  "assets/images/memories/foto3.jpg",
+                         "caption":  "Tawa Lepas ✨",
+                         "date":  "Hari yang Cerah",
+                         "backNote":  "Semoga tawa bahagiamu ini tidak pernah pudar ya sayang, di usia ke-21 ini dan selamanya."
+                     },
+                     {
+                         "image":  "assets/images/memories/foto4.jpg",
+                         "caption":  "Binar Matamu yang Tulus 💫",
+                         "date":  "Setiap Hari",
+                         "backNote":  "Terima kasih sudah selalu menjadi dirimu yang hangat, tulus, dan luar biasa untukku."
+                     }
+                 ],
+    "music":  {
+                  "title":  "Monokrom",
+                  "artist":  "Tulus",
+                  "youtubeId":  "s5e_t7tB38E",
+                  "youtubeUrl":  "https://www.youtube.com/watch?v=s5e_t7tB38E",
+                  "url":  "assets/audio/monokrom.mp3",
+                  "volume":  0.8,
+                  "localFile":  "assets/audio/monokrom.mp3",
+                  "fallbackUrl":  "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-112199.mp3"
+              },
+    "admin":  {
+                  "passwordHash":  "$2y$10$w3U/l7qQfL2l6e4C7mBfQO1hRzWvJ.oQk2P8E9TzHjY2mK5uU9W2y"
+              }
+}
